@@ -1,0 +1,495 @@
+/* Expense Breakdown Card Styles */
+
+.expense-breakdown-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid #E5E7EB;
+  padding: 24px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.expense-breakdown-card.dark-mode {
+  background: #F9FAFB;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Header Section */
+.card-header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.expense-breakdown-card.dark-mode .card-title {
+  color: #111827;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  color: #6B7280;
+  margin: 0;
+  font-weight: 500;
+}
+
+.expense-breakdown-card.dark-mode .card-subtitle {
+  color: #6B7280;
+}
+
+/* Chart Wrapper */
+.chart-wrapper {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pie Chart Container */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  margin-bottom: 24px;
+}
+
+.pie-slice {
+  cursor: pointer;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+  transition: filter 0.3s ease;
+}
+
+.pie-slice:hover {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+  opacity: 0.9;
+}
+
+/* Custom Tooltip */
+.expense-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.expense-tooltip.dark {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.tooltip-category {
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  font-size: 13px;
+  color: #e5e7eb;
+}
+
+.tooltip-percentage {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 4px 0;
+  color: #ffffff;
+}
+
+.tooltip-amount {
+  font-size: 12px;
+  margin: 4px 0 0 0;
+  color: #d1d5db;
+}
+
+/* Category Breakdown */
+.category-breakdown {
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.expense-breakdown-card.dark-mode .category-breakdown {
+  background: #111827;
+}
+
+.breakdown-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expense-breakdown-card.dark-mode .breakdown-title {
+  color: #9ca3af;
+}
+
+.breakdown-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.category-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.category-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.expense-breakdown-card.dark-mode .category-name {
+  color: #d1d5db;
+}
+
+.category-percentage {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  min-width: 45px;
+  text-align: right;
+}
+
+.expense-breakdown-card.dark-mode .category-percentage {
+  color: #f3f4f6;
+}
+
+/* Skeleton Loader */
+.card-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 400px;
+}
+
+.skeleton-header {
+  height: 24px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+  width: 25%;
+}
+
+.skeleton-chart {
+  height: 280px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.skeleton-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-row {
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 6px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.expense-breakdown-card.dark-mode .skeleton-header,
+.expense-breakdown-card.dark-mode .skeleton-chart,
+.expense-breakdown-card.dark-mode .skeleton-row {
+  background: linear-gradient(
+    90deg,
+    #374151 25%,
+    #4b5563 50%,
+    #374151 75%
+  );
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  gap: 16px;
+}
+
+.empty-state-icon {
+  width: 56px;
+  height: 56px;
+  color: #d1d5db;
+  opacity: 0.5;
+}
+
+.expense-breakdown-card.dark-mode .empty-state-icon {
+  color: #6b7280;
+}
+
+.empty-state-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0;
+}
+
+.expense-breakdown-card.dark-mode .empty-state-text {
+  color: #d1d5db;
+}
+
+.empty-state-subtext {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+  text-align: center;
+  max-width: 280px;
+}
+
+.expense-breakdown-card.dark-mode .empty-state-subtext {
+  color: #9ca3af;
+}
+
+/* Recharts Legend Customization */
+.expense-breakdown-card .recharts-legend-item-text {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.expense-breakdown-card .recharts-legend-item:hover .recharts-legend-item-text {
+  opacity: 0.7;
+}
+
+/* Responsiveness */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .expense-breakdown-card {
+    padding: 16px;
+  }
+
+  .card-header {
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .pie-chart-container {
+    min-height: 250px;
+    margin-bottom: 16px;
+  }
+
+  .category-breakdown {
+    padding: 12px;
+  }
+
+  .breakdown-title {
+    margin-bottom: 8px;
+  }
+
+  .breakdown-items {
+    gap: 8px;
+  }
+
+  .breakdown-item {
+    padding: 6px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .expense-breakdown-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .card-header {
+    margin-bottom: 12px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-subtitle {
+    font-size: 11px;
+  }
+
+  .pie-chart-container {
+    min-height: 240px;
+    margin-bottom: 12px;
+  }
+
+  .expense-breakdown-card .recharts-legend {
+    display: none;
+  }
+
+  .expense-breakdown-card .recharts-pie {
+    margin: 0 auto !important;
+  }
+
+  .category-breakdown {
+    padding: 10px;
+  }
+
+  .breakdown-title {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .breakdown-items {
+    gap: 8px;
+  }
+
+  .breakdown-item {
+    padding: 4px 0;
+  }
+
+  .category-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .category-name {
+    font-size: 12px;
+  }
+
+  .category-percentage {
+    font-size: 12px;
+    min-width: 35px;
+  }
+
+  .card-skeleton {
+    min-height: 300px;
+    gap: 12px;
+  }
+
+  .skeleton-header {
+    height: 18px;
+    width: 35%;
+  }
+
+  .skeleton-chart {
+    height: 200px;
+  }
+
+  .empty-state {
+    min-height: 280px;
+  }
+
+  .empty-state-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .empty-state-text {
+    font-size: 14px;
+  }
+
+  .empty-state-subtext {
+    font-size: 12px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .expense-breakdown-card,
+  .pie-slice,
+  .skeleton-header,
+  .skeleton-chart,
+  .skeleton-row {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* Focus States for Accessibility */
+.category-dot:focus-visible,
+.breakdown-item:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: more) {
+  .pie-slice {
+    stroke: #111827;
+    stroke-width: 2px;
+  }
+
+  .category-dot {
+    border: 1px solid #111827;
+  }
+
+  .expense-breakdown-card.dark-mode .pie-slice {
+    stroke: #f3f4f6;
+  }
+
+  .expense-breakdown-card.dark-mode .category-dot {
+    border-color: #f3f4f6;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .expense-breakdown-card {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+
+  .pie-slice {
+    filter: none;
+  }
+}

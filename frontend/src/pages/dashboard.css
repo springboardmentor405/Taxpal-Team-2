@@ -5,7 +5,7 @@
 .dashboard-container {
   display: flex;
   height: 100vh;
-  background-color: #f5f7fa;
+  background-color: #F3F4F6;
   overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
   padding: 40px;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: #f5f7fa;
+  background-color: #F3F4F6;
 }
 
 /* ============================================
@@ -30,23 +30,24 @@
 }
 
 .summary-card {
-  background: white;
+  background: #FFFFFF;
   padding: 28px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
 }
 
 .summary-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-color: #D1D5DB;
 }
 
 .summary-card h4 {
   margin: 0 0 12px 0;
   font-size: 13px;
   font-weight: 500;
-  color: #6b7280;
+  color: #6B7280;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -55,7 +56,15 @@
   margin: 0;
   font-size: 32px;
   font-weight: 700;
-  color: #1f2937;
+  color: #111827;
+}
+
+.summary-card h2.income {
+  color: #06B6D4;
+}
+
+.summary-card h2.expense {
+  color: #F97316;
 }
 
 /* ============================================
@@ -71,10 +80,11 @@
 }
 
 .chart-card {
-  background: white;
+  background: #FFFFFF;
   padding: 28px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +94,7 @@
   margin: 0 0 20px 0;
   font-size: 18px;
   font-weight: 600;
-  color: #1f2937;
+  color: #111827;
 }
 
 .chart-container {

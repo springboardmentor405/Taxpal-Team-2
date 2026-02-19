@@ -1,0 +1,132 @@
+/* Dashboard Header Styling */
+.dashboard-header {
+  background: #FFFFFF;
+  padding: 24px 32px;
+  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}\n\n.header-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.5px;
+}\n\n.header-subtitle {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+  line-height: 1.5;
+}\n\n/* Right Section - Summary Cards */
+.header-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}\n\n.header-stat {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: center;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}\n\n.header-stat:hover {
+  background: #F9FAFB;
+  border-color: #D1D5DB;
+}\n\n.stat-label {
+  font-size: 11px;
+  color: #9CA3AF;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}\n\n.stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}\n\n.stat-value.green {
+  color: #10B981;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  .header-stat {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+
+  .header-title {
+    font-size: 22px;
+  }
+
+  .header-subtitle {
+    font-size: 13px;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  .header-stat {
+    flex: 1;
+    padding: 10px 12px;
+  }
+
+  .stat-value {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    padding: 12px 16px;
+    margin-bottom: 12px;
+  }
+
+  .header-title {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+  }
+
+  .header-right {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .header-stat {
+    padding: 8px 10px;
+    min-width: 0;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+
+  .stat-value {
+    font-size: 14px;
+  }
+}
+
