@@ -24,7 +24,7 @@
   max-height: 90vh;
   overflow-y: auto;
   animation: slideIn 200ms ease-out;
-  border: 1px solid #E5E7EB;
+  border: 1px solid rgba(167, 139, 250, 0.3);
 }
 
 /* Animations */
@@ -124,8 +124,8 @@
 }
 
 .form-input:focus {
-  border-color: #06B6D4;
-  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+  border-color: #A78BFA;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.35);
 }
 
 .form-input-group {
@@ -171,23 +171,23 @@
 }
 
 .btn-primary {
-  background-color: #06B6D4;
+  background-color: #5B21B6;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #0891B2;
+  background-color: #3B0764;
 }
 
 .btn-secondary {
-  background-color: #FFFFFF;
-  color: #374151;
-  border: 1px solid #D1D5DB;
+  background-color: #A78BFA;
+  color: #3B0764;
+  border: 1px solid #A78BFA;
 }
 
 .btn-secondary:hover {
-  background-color: #F9FAFB;
-  border-color: #9CA3AF;
+  background-color: #8B5CF6;
+  border-color: #8B5CF6;
 }
 
 /* Responsive */

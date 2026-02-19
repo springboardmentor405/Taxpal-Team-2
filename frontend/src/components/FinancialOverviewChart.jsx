@@ -155,21 +155,21 @@ function FinancialOverviewChart({ isDarkMode = false, data = null, isLoading = f
             >
               <CartesianGrid
                 strokeDasharray="3 3"
-                stroke="#E5E7EB"
+                stroke="rgba(167, 139, 250, 0.35)"
                 vertical={false}
               />
               <XAxis
                 dataKey="label"
                 tick={{ fill: isDarkMode ? "#D1D5DB" : "#6B7280", fontSize: 12 }}
-                axisLine={{ stroke: isDarkMode ? "#4B5563" : "#E5E7EB" }}
+                axisLine={{ stroke: isDarkMode ? "#4B5563" : "rgba(167, 139, 250, 0.35)" }}
               />
               <YAxis
                 tickFormatter={formatYAxis}
                 domain={[0, maxValue]}
                 tick={{ fill: isDarkMode ? "#D1D5DB" : "#6B7280", fontSize: 12 }}
-                axisLine={{ stroke: isDarkMode ? "#4B5563" : "#E5E7EB" }}
+                axisLine={{ stroke: isDarkMode ? "#4B5563" : "rgba(167, 139, 250, 0.35)" }}
               />
-              <Tooltip content={<CustomTooltip />} cursor={{ fill: "rgba(0,0,0,0.05)" }} />
+              <Tooltip content={<CustomTooltip />} cursor={{ fill: "rgba(167, 139, 250, 0.08)" }} />
               <Legend
                 wrapperStyle={{
                   paddingTop: "20px",

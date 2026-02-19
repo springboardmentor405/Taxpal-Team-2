@@ -4,7 +4,7 @@
 
 .user-profile {
   padding-top: 16px;
-  border-top: 1px solid #D1D5DB;
+  border-top: 1px solid rgba(167, 139, 250, 0.25);
   position: relative;
 }
 
@@ -21,7 +21,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #06B6D4;
+  background: #5B21B6;
   color: white;
   font-weight: 700;
   font-size: 14px;
@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 1px 3px rgba(6, 182, 212, 0.1);
+  box-shadow: 0 1px 3px rgba(91, 33, 182, 0.2);
 }
 
 /* Profile Info */
@@ -62,8 +62,8 @@
   height: 32px;
   border-radius: 6px;
   border: none;
-  background: #D1D5DB;
-  color: #6B7280;
+  background: rgba(167, 139, 250, 0.25);
+  color: #5B21B6;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -72,10 +72,10 @@
   transition: all 0.2s ease;
   flex-shrink: 0;
 }\n\n.profile-menu-btn:hover {
-  background: #BFD3E0;
-  color: #111827;
+  background: rgba(167, 139, 250, 0.45);
+  color: #5B21B6;
 }\n\n.profile-menu-btn:focus {
-  outline: 2px solid #06B6D4;
+  outline: 2px solid #A78BFA;
   outline-offset: -2px;
 }\n\n/* Profile Menu */
 .profile-menu {
@@ -84,7 +84,7 @@
   left: 12px;
   right: 12px;
   background: #FFFFFF;
-  border: 1px solid #E5E7EB;
+  border: 1px solid rgba(167, 139, 250, 0.3);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
@@ -120,8 +120,8 @@
 }
 
 .profile-menu-item:hover {
-  background: #F3F4F6;
-  color: #06B6D4;
+  background: rgba(167, 139, 250, 0.18);
+  color: #5B21B6;
 }
 
 .profile-menu-icon {

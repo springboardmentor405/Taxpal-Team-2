@@ -34,8 +34,8 @@
   transition: all 0.2s ease;
   min-width: 120px;
 }\n\n.header-stat:hover {
-  background: #F9FAFB;
-  border-color: #D1D5DB;
+  background: rgba(167, 139, 250, 0.08);
+  border-color: rgba(167, 139, 250, 0.35);
 }\n\n.stat-label {
   font-size: 11px;
   color: #9CA3AF;

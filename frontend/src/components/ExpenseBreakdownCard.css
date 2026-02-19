@@ -11,7 +11,7 @@
 }
 
 .expense-breakdown-card.dark-mode {
-  background: #F9FAFB;
+  background: rgba(167, 139, 250, 0.08);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
@@ -110,7 +110,7 @@
 /* Category Breakdown */
 .category-breakdown {
   padding: 16px;
-  background: #f9fafb;
+  background: rgba(167, 139, 250, 0.08);
   border-radius: 12px;
 }
 
@@ -207,9 +207,9 @@
   height: 280px;
   background: linear-gradient(
     90deg,
-    #f0f0f0 25%,
-    #e0e0e0 50%,
-    #f0f0f0 75%
+    #F5F3FF 25%,
+    #EDE9FE 50%,
+    #F5F3FF 75%
   );
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
@@ -227,9 +227,9 @@
   height: 20px;
   background: linear-gradient(
     90deg,
-    #f0f0f0 25%,
-    #e0e0e0 50%,
-    #f0f0f0 75%
+    #F5F3FF 25%,
+    #EDE9FE 50%,
+    #F5F3FF 75%
   );
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
@@ -250,9 +250,9 @@
 .expense-breakdown-card.dark-mode .skeleton-row {
   background: linear-gradient(
     90deg,
-    #374151 25%,
-    #4b5563 50%,
-    #374151 75%
+    #3B0764 25%,
+    #5B21B6 50%,
+    #3B0764 75%
   );
 }
 
@@ -269,7 +269,7 @@
 .empty-state-icon {
   width: 56px;
   height: 56px;
-  color: #d1d5db;
+  color: #A78BFA;
   opacity: 0.5;
 }
 
@@ -458,7 +458,7 @@
 /* Focus States for Accessibility */
 .category-dot:focus-visible,
 .breakdown-item:focus-visible {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #A78BFA;
   outline-offset: 2px;
 }
 

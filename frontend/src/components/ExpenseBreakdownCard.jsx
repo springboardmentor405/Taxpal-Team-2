@@ -11,11 +11,11 @@ import "./ExpenseBreakdownCard.css";
 
 // Category colors - strictly defined
 const CATEGORY_COLORS = {
-  "Rent/Mortgage": "#1D4ED8",
-  "Business Expenses": "#10B981",
-  Utilities: "#F59E0B",
+  "Rent/Mortgage": "#5B21B6",
+  "Business Expenses": "#8B5CF6",
+  Utilities: "#A78BFA",
   Food: "#EF4444",
-  Other: "#8B5CF6",
+  Other: "#3B0764",
 };
 
 // Mock data

@@ -9,7 +9,7 @@
   line-height: 1.6;
   font-weight: 400;
   color: #111827;
-  background-color: #F3F4F6;
+  background-color: rgba(167, 139, 250, 0.06);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -70,13 +70,13 @@ p {
 }
 
 a {
-  color: #3b82f6;
+  color: #8B5CF6;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #2563eb;
+  color: #5B21B6;
 }
 
 /* ============================================
@@ -90,21 +90,21 @@ button {
   font-size: 14px;
   font-weight: 500;
   font-family: inherit;
-  background-color: #3b82f6;
+  background-color: #5B21B6;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #2563eb;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  background-color: #3B0764;
+  box-shadow: 0 4px 12px rgba(91, 33, 182, 0.3);
 }
 
 button:focus,
 button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.35);
 }
 
 input,
@@ -122,8 +122,8 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #A78BFA;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.35);
 }
 
 /* ============================================
@@ -140,10 +140,10 @@ select:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: #A78BFA;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: #8B5CF6;
 }

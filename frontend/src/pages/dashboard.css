@@ -5,7 +5,7 @@
 .dashboard-container {
   display: flex;
   height: 100vh;
-  background-color: #F3F4F6;
+  background-color: rgba(167, 139, 250, 0.06);
   overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
   padding: 40px;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: #F3F4F6;
+  background-color: rgba(167, 139, 250, 0.06);
 }
 
 /* ============================================
@@ -40,7 +40,7 @@
 
 .summary-card:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-color: #D1D5DB;
+  border-color: rgba(167, 139, 250, 0.35);
 }
 
 .summary-card h4 {
@@ -60,11 +60,11 @@
 }
 
 .summary-card h2.income {
-  color: #06B6D4;
+  color: #10B981;
 }
 
 .summary-card h2.expense {
-  color: #F97316;
+  color: #EF4444;
 }
 
 /* ============================================
@@ -133,7 +133,7 @@
 }
 
 .transactions-table thead {
-  border-bottom: 2px solid #e5e7eb;
+  border-bottom: 2px solid rgba(167, 139, 250, 0.25);
 }
 
 .transactions-table th {
@@ -147,16 +147,16 @@
 }
 
 .transactions-table tbody tr {
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.15);
   transition: background-color 0.2s ease;
 }
 
 .transactions-table tbody tr:nth-child(odd) {
-  background-color: #fafbfc;
+  background-color: rgba(167, 139, 250, 0.04);
 }
 
 .transactions-table tbody tr:hover {
-  background-color: #f0f4f8;
+  background-color: rgba(167, 139, 250, 0.1);
 }
 
 .transactions-table td {
